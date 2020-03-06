@@ -1,0 +1,24 @@
+
+.App{
+  margin: auto;
+  /* border: 2px solid blue; */
+  height: 100vh;
+}
+
+.homeBackground{
+  /* border: 5px solid palevioletred; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  text-align: center;
+  font-size: 3rem;
+}
+
+.homeBackground img{
+  /* border: 5px solid rgb(50, 196, 147); */
+  padding-top: 3rem;
+  width: 80%;
+}
