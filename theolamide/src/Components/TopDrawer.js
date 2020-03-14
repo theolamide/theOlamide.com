@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 
 const RootWrapper = styled.div`
-    height: 10%;
+    height: 5rem;
     width: 100%;
     background: #BCE5B9;
     position: fixed;
@@ -34,7 +34,7 @@ const TopDrawer = ({ closeDrawer }) => {
     return (
         <RootWrapper>
             <TopContainer>
-                <img src={Logo} style={{ width: "2.5rem" }} />
+                <img src={Logo} style={{ width: "2rem", height: "3.1rem" }} />
 
                 <HamWrapper onClick={closeDrawer}>
                     X

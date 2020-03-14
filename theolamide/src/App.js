@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from "styled-components";
-import Burger from 'react-css-burger';
 import { Route, Switch, BrowserRouter, Redirect } from "react-router-dom";
 
 import NavBar from './Components/NavBar';
