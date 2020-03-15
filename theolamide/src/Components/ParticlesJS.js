@@ -26,7 +26,7 @@ const ParticlesJS = () => {
                 params={{
                     "particles": {
                         "number": {
-                            "value": 7,
+                            "value": 15,
                             "density": {
                                 "enable": true,
                                 "value_area": 800
@@ -36,13 +36,13 @@ const ParticlesJS = () => {
                             "enable": false
                         },
                         "move": {
-                            "speed": 3,
+                            "speed": 2,
                             "out_mode": "bounce"
                         },
                         "shape": {
                             "type": [
-                                "images"
-                                // "circle"
+                                "images",
+                                "circle"
                             ],
                             "images": [
                                 {
@@ -113,7 +113,7 @@ const ParticlesJS = () => {
                             ]
                         },
                         "color": {
-                            "value": "#114911"
+                            "value": "#B677D6"
                         },
                         "size": {
                             "value": 30,

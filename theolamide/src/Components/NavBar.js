@@ -17,7 +17,6 @@ const NavBar = ({ NavAppear, closeBackDropClickHandler }) => {
     return (
         <div>
             {topDrawer}
-
         </div>
     )
 }
