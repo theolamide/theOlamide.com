@@ -1,0 +1,27 @@
+
+.App{
+  margin: auto;
+  /* border: 2px solid blue; */
+  height: 100vh;
+}
+
+.homeBackground{
+  /* border: 5px solid palevioletred; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Gruppo', cursive;
+}
+
+h2{
+  font-family: 'Gruppo', cursive;
+}
+
+p{
+  font-family: 'Baloo 2', cursive;
+}
