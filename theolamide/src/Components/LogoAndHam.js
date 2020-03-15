@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import styled from 'styled-components';
 import Logo from '../Images/Logo.png';
+import HamOpen from '../Images/HamOpen.png'
 
 
 const LogoandHam = (props) => {
@@ -13,7 +14,7 @@ const LogoandHam = (props) => {
                 <LogoWrapper src={Logo} />
             </Link>
             <HamWrapper onClick={props.drawerToggleClickHandler}>
-                Hamburger
+                <OpenHamTag src={HamOpen} />
             </HamWrapper>
         </TopContainer>
     )
@@ -34,4 +35,9 @@ const LogoWrapper = styled.img`
 `
 const HamWrapper = styled.div`
     cursor: pointer;
+`
+const OpenHamTag = styled.img`
+    object-fit: cover;
+    width: 3rem;
+    margin: auto;
 `

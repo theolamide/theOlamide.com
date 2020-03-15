@@ -36,7 +36,7 @@ const ParticlesJS = () => {
                             "enable": false
                         },
                         "move": {
-                            "speed": 2,
+                            "speed": 10,
                             "out_mode": "bounce"
                         },
                         "shape": {
@@ -45,6 +45,11 @@ const ParticlesJS = () => {
                                 "circle"
                             ],
                             "images": [
+                                {
+                                    "src": `${Javascript}`,
+                                    "height": 20,
+                                    "width": 20
+                                },
                                 {
                                     "src": `${Camera}`,
                                     "height": 20,
@@ -66,22 +71,12 @@ const ParticlesJS = () => {
                                     "width": 20
                                 },
                                 {
-                                    "src": `${Javascript}`,
-                                    "height": 20,
-                                    "width": 20
-                                },
-                                {
                                     "src": `${LightRoom}`,
                                     "height": 20,
                                     "width": 20
                                 },
                                 {
                                     "src": `${MatLab}`,
-                                    "height": 20,
-                                    "width": 20
-                                },
-                                {
-                                    "src": `${NodeJs}`,
                                     "height": 20,
                                     "width": 20
                                 },
@@ -96,17 +91,22 @@ const ParticlesJS = () => {
                                     "width": 20
                                 },
                                 {
-                                    "src": `${ReactJs}`,
-                                    "height": 20,
-                                    "width": 20
-                                },
-                                {
                                     "src": `${SQL}`,
                                     "height": 20,
                                     "width": 20
                                 },
                                 {
                                     "src": `${VintageCamera}`,
+                                    "height": 20,
+                                    "width": 20
+                                },
+                                {
+                                    "src": `${ReactJs}`,
+                                    "height": 20,
+                                    "width": 20
+                                },
+                                {
+                                    "src": `${NodeJs}`,
                                     "height": 20,
                                     "width": 20
                                 }

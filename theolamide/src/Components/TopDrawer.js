@@ -1,9 +1,43 @@
 import React from 'react';
-import { withRouter } from "react-router-dom";
-import Logo from '../Images/Logo.png';
+import { Link } from "react-router-dom";
 import styled from 'styled-components';
+import Logo from '../Images/Logo.png';
+import HamClose from '../Images/HamClose.png'
+
+const TopDrawer = ({ closeDrawer }) => {
 
 
+    return (
+        <RootWrapper>
+            <TopContainer>
+                <Link to="/" onClick={closeDrawer}>
+                    <LogoWrapper src={Logo} alt="logo" />
+                </Link>
+
+                <LinkAndHamWrapper>
+                    <LinkWrapper>
+                        <StyledLink to="/about" onClick={closeDrawer}>aboutMe</StyledLink>
+
+                        <StyledLink to="/skillset" onClick={closeDrawer}>mySkillset</StyledLink>
+
+                        <StyledLink to="/portfolio" onClick={closeDrawer}>myPortfolio</StyledLink>
+
+                        <StyledLink to="/contact" onClick={closeDrawer}>contactMe</StyledLink>
+
+                        <StyledLink to="/store" onClick={closeDrawer}>buyArt</StyledLink>
+                    </LinkWrapper>
+
+                    <HamWrapper onClick={closeDrawer}>
+                        <CloseHamTag src={HamClose} />
+                    </HamWrapper>
+                </LinkAndHamWrapper>
+
+            </TopContainer>
+        </RootWrapper>
+    )
+};
+
+export default TopDrawer;
 
 const RootWrapper = styled.div`
     height: 5rem;
@@ -16,6 +50,9 @@ const RootWrapper = styled.div`
     display:flex;
     justify-content: space-between;
     // border: 1px solid black;
+    @media (max-width: 414px) {
+            height:25rem;
+        }
 `
 const TopContainer = styled.div`
     width: 95%;
@@ -24,24 +61,50 @@ const TopContainer = styled.div`
     margin: 1rem auto;
     // border: 1px solid black;
 `
-const HamWrapper = styled.div`
+const LogoWrapper = styled.img`
+    width: 2rem;
+    height: 3.1rem;
+    // object-fit: cover;
     cursor: pointer;
 `
-
-const TopDrawer = ({ closeDrawer }) => {
-
-
-    return (
-        <RootWrapper>
-            <TopContainer>
-                <img src={Logo} style={{ width: "2rem", height: "3.1rem" }} />
-
-                <HamWrapper onClick={closeDrawer}>
-                    X
-                </HamWrapper>
-            </TopContainer>
-        </RootWrapper>
-    )
-};
-
-export default TopDrawer;
+const LinkAndHamWrapper = styled.div`
+    // border: 1px solid black;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+        @media (max-width: 414px) {
+                flex-direction: column-reverse;
+                align-items: flex-end;
+            }
+`
+const LinkWrapper = styled.div`
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // border: 1px solid black;
+    @media (max-width: 414px) {
+                flex-direction: column;
+                align-items: flex-end;
+                height: 70%;
+                margin: 0 0.5rem 2rem 0;
+            }
+`
+const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: #0E4416;
+    // border: 1px solid black;
+    @media (max-width: 414px) {
+        border-right: 1px solid #67973E;
+        padding-right: 0.5rem;
+    }
+`
+const HamWrapper = styled.div`
+    cursor: pointer;
+    // border: 1px solid black;
+`
+const CloseHamTag = styled.img`
+    object-fit: cover;
+    width: 3rem;
+    margin: auto;
+`
