@@ -34,6 +34,7 @@ export default Home;
 const RootWrapper = styled.div`
     width: 100%;
     //height: 100%;
+    
 `
 const MainContent = styled.div`
     margin: auto;
@@ -46,6 +47,9 @@ const MainContent = styled.div`
     @media (max-width: 768px) {
             flex-direction: column-reverse;
             height: 100%;
+        }
+        @media (max-width: 414px) {
+            margin-top: 1rem;
         }
 `
 const TitlesWrapper = styled.div`
