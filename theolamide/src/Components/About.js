@@ -9,7 +9,7 @@ import Profile from '../Images/About/Profile.jpg';
 const About = (props) => {
 
     return (
-        <div style={{ height: "99%" }}>
+        <div style={{ height: "96%" }}>
             <LogoandHam drawerToggleClickHandler={props.drawerToggleClickHandler} />
             <MainContent>
                 <AboutWrapper>
@@ -18,18 +18,19 @@ const About = (props) => {
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     </AboutParagraph>
                 </AboutWrapper>
-                <ProfileImage src={Profile} />
+                <ProfileImage src={Profile} alt="profile image" />
             </MainContent>
         </div>
     )
 }
 
 const ProfileImage = styled.img`
-    border-radius: 0.75rem;
+    border-radius: 0.25rem;
     object-fit: cover;
     width: 20rem;
     @media (max-width: 414px) {
         width: 7rem;
+        margin-left: 65%;
     }
 `
 const AboutWrapper = styled.div`

@@ -24,7 +24,7 @@ const TopDrawer = ({ closeDrawer }) => {
 
                         <StyledLink to="/contact" onClick={closeDrawer}>contactMe</StyledLink>
 
-                        <StyledLink to="/store" onClick={closeDrawer}>buyArt</StyledLink>
+                        <StyledLink to="/store" onClick={closeDrawer}>buyMyArt</StyledLink>
                     </LinkWrapper>
 
                     <HamWrapper onClick={closeDrawer}>
@@ -95,7 +95,7 @@ const StyledLink = styled(Link)`
     color: #0E4416;
     // border: 1px solid black;
     @media (max-width: 414px) {
-        border-right: 1px solid #67973E;
+        border-right: 2px solid #67973E;
         padding-right: 0.5rem;
     }
 `

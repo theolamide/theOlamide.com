@@ -5,6 +5,8 @@ import { Route, Switch, BrowserRouter } from "react-router-dom";
 import NavBar from './Components/NavBar';
 import Home from './Components/Home';
 import About from './Components/About';
+import Portfolio from './Components/Portfolio';
+
 import ParticlesJS from "./Components/ParticlesJS";
 
 
@@ -34,6 +36,7 @@ function App() {
           <NavBar NavAppear={NavAppear} closeBackDropClickHandler={closeBackDropClickHandler} />
           <Switch>
             <Route path='/about' render={(props) => <About drawerToggleClickHandler={drawerToggleClickHandler} />} />
+            <Route path='/portfolio' render={(props) => <Portfolio drawerToggleClickHandler={drawerToggleClickHandler} />} />
             <Route path='/' render={(props) => <Home drawerToggleClickHandler={drawerToggleClickHandler} />} />
           </Switch>
 
