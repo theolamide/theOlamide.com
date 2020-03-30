@@ -16,15 +16,22 @@ const TopDrawer = ({ closeDrawer }) => {
 
                 <LinkAndHamWrapper>
                     <LinkWrapper>
+                        <StyledLink to="/" onClick={closeDrawer}>goHome</StyledLink>
+
                         <StyledLink to="/about" onClick={closeDrawer}>aboutMe</StyledLink>
 
-                        <StyledLink to="/skillset" onClick={closeDrawer}>mySkillset</StyledLink>
+                        <StyledLink to="/devportfolio" onClick={closeDrawer}>myDevWork</StyledLink>
 
-                        <StyledLink to="/portfolio" onClick={closeDrawer}>myPortfolio</StyledLink>
+                        <StyledLink to="/photoportfolio" onClick={closeDrawer}>myPhotoWork</StyledLink>
+
+                        <StyledLink to="/" onClick={closeDrawer}>myPhotoWork</StyledLink>
+
+                        {/* <StyledLink to="/skillset" onClick={closeDrawer}>mySkillset</StyledLink>
+
 
                         <StyledLink to="/contact" onClick={closeDrawer}>contactMe</StyledLink>
 
-                        <StyledLink to="/store" onClick={closeDrawer}>buyMyArt</StyledLink>
+                        <StyledLink to="/store" onClick={closeDrawer}>buyMyArt</StyledLink> */}
                     </LinkWrapper>
 
                     <HamWrapper onClick={closeDrawer}>

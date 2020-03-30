@@ -2,19 +2,19 @@ import React from "react";
 import Particles from 'react-particles-js';
 
 
-import Camera from '../Images/Camera.png';
-import CreativeCloud from '../Images/CreativeCloud.png';
-import CSS from '../Images/CSS.png';
-import Git from '../Images/Git.png';
-import Javascript from '../Images/Javascript.png';
-import LightRoom from '../Images/LightRoom.png';
-import MatLab from '../Images/MatLab.png';
-import NodeJs from '../Images/NodeJs.png';
-import PhotoShop from '../Images/PhotoShop.png';
-import Python from '../Images/Python.png';
-import ReactJs from '../Images/ReactJs.png';
-import SQL from '../Images/SQL.png';
-import VintageCamera from '../Images/VintageCamera.png';
+import Camera from '../Images/Icons/Camera.png';
+import CreativeCloud from '../Images/Icons/CreativeCloud.png';
+import CSS from '../Images/Icons/CSS.png';
+import Git from '../Images/Icons/Git.png';
+import Javascript from '../Images/Icons/Javascript.png';
+import LightRoom from '../Images/Icons/LightRoom.png';
+import MatLab from '../Images/Icons/MatLab.png';
+import NodeJs from '../Images/Icons/NodeJs.png';
+import PhotoShop from '../Images/Icons/PhotoShop.png';
+import Python from '../Images/Icons/Python.png';
+import ReactJs from '../Images/Icons/ReactJs.png';
+import SQL from '../Images/Icons/SQL.png';
+import VintageCamera from '../Images/Icons/VintageCamera.png';
 
 const ParticlesJS = () => {
 

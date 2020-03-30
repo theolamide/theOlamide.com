@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import { PortfolioData } from './PortfolioData'
 
-const Portfolio = (props) => {
+const DevPortfolio = (props) => {
 
 
     return (
@@ -15,11 +15,11 @@ const Portfolio = (props) => {
                 {PortfolioData.map(project => (
                     <div key={project.index}>
                         <ProjectWrapper>
-                            <div style={{ width: "55%" }}>
+                            <div className="mainContent">
                                 <h2>{project.title}</h2>
                                 <p>{project.description}</p>
-                                <div style={{ width: "100%", display: "flex" }}>
-                                    <div style={{ width: "55%" }}>
+                                <ButtonsWrapper>
+                                    <div className="tagbuttons">
                                         <h3>Tech Stack: </h3>
                                         <TagButtonDiv>
                                             {project.technologies.map(tech => (
@@ -34,7 +34,7 @@ const Portfolio = (props) => {
                                             View Project
                                         </button>
                                     </a>
-                                </div>
+                                </ButtonsWrapper>
                             </div>
                             <ProjectCover src={project.cover} alt="project cover photo"></ProjectCover>
                         </ProjectWrapper>
@@ -46,7 +46,7 @@ const Portfolio = (props) => {
     )
 }
 
-export default Portfolio;
+export default DevPortfolio;
 
 const RootWrapper = styled.div`
     height: 96%;
@@ -61,11 +61,14 @@ const MapWrapper = styled.div`
             {
                 width: 6px;
                 height: 0px;
-                background-color: white;
+                background-color: #E0FCDE;
+                border-radius: 0.05rem;
+
             } 
         &::-webkit-scrollbar-thumb
             {
                 background-color: #134818;
+                border-radius: 0.05rem;
             }
 `
 
@@ -78,6 +81,12 @@ const ProjectWrapper = styled.div`
     padding: 1rem;
     border-radius: 0.5rem;
     //border: 1px solid black;
+        .mainContent{
+            width: 55%;
+                @media (max-width: 414px) {
+                    width:100%;
+                }
+        }
     @media (max-width: 414px) {
         flex-direction: column-reverse;
     }
@@ -92,10 +101,29 @@ const ProjectCover = styled.img`
         margin: 0 auto;
     }
 `
+const ButtonsWrapper = styled.div`
+    width: 100%;
+    display: flex;
+
+    .tagbuttons{
+        width: 55%;
+        //border: 1px solid black;
+    }
+    @media (max-width: 414px) {
+        flex-direction: column; 
+            
+        .tagbuttons{
+            width: 100%;
+            }    
+    }
+`
 const TagButtonDiv = styled.div`
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
-    // border: 1px solid black;
+    //border: 1px solid black;
+        @media (max-width: 414px) {
+            margin-bottom: 2rem;
+        }
 `
