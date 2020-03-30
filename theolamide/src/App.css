@@ -12,6 +12,24 @@
   align-items: center;
 }
 
+body::-webkit-scrollbar-track
+{
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+    -webkit-box-shadow: inset 0 0 5rem #BCE5B9;
+    /* background-color: #F5F5F5; */
+}
+
+body::-webkit-scrollbar
+{
+    width: 6px;
+    background-color: #BCE5B9;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    background-color: #BCE5B9;
+}
+
 h1{
   text-align: center;
   font-size: 3rem;
@@ -28,4 +46,17 @@ p{
 
 a{
   font-family: 'Baloo 2', cursive;
+}
+
+button{
+  cursor: pointer;
+  border: 1px solid #134818;
+  border-radius: 1rem;
+  background-color: #BCE5B9;
+}
+
+.visit{
+  width: 10rem;
+  height: 3rem;
+  border-radius: 0.25rem;
 }
