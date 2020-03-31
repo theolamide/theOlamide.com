@@ -24,8 +24,6 @@ const TopDrawer = ({ closeDrawer }) => {
 
                         <StyledLink to="/photoportfolio" onClick={closeDrawer}>myPhotoWork</StyledLink>
 
-                        <StyledLink to="/" onClick={closeDrawer}>myPhotoWork</StyledLink>
-
                         {/* <StyledLink to="/skillset" onClick={closeDrawer}>mySkillset</StyledLink>
 
 

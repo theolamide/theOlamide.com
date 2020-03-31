@@ -1,12 +1,8 @@
 import React from 'react';
-import styled from 'styled-components'
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import styled from 'styled-components';
 
 import LogoandHam from './LogoAndHam';
-
-import Camera from '../Images/Icons/Camera.png';
-import CreativeCloud from '../Images/Icons/CreativeCloud.png';
+import PhotoSilder from './PhotoSlider'
 
 
 
@@ -15,21 +11,9 @@ const PhotoPortfolio = (props) => {
     return (
         <RootWrapper>
             <LogoandHam drawerToggleClickHandler={props.drawerToggleClickHandler} />
-
-            <Car showArrows={true} autoPlay={true} infiniteLoop={true}>
-                <div>
-                    <img src={Camera}
-                    // style={{ objectFit: "cover", width: "35%" }}
-                    />
-                    <p className="legend">Legend 1</p>
-                </div>
-                <div>
-                    <img src={CreativeCloud}
-                    // style={{ objectFit: "cover", width: "35%" }} 
-                    />
-                    <p className="legend">Legend 2</p>
-                </div>
-            </Car>
+            <MainContent>
+                <PhotoSilder />
+            </MainContent>
         </RootWrapper>
     )
 }
@@ -39,11 +23,28 @@ export default PhotoPortfolio;
 const RootWrapper = styled.div`
     height: 96%;
 `
-const Car = styled(Carousel)`
-    margin: 0 auto;
-    width: 90%;
-    height: 85%;
-    background: white;
-    // border: 2px solid blue;
+const MainContent = styled.div`
+    margin: auto;
+    margin-top: 1rem;
+    width: 95%;
+    height: 89%;
+    display: flex;
+    justify-content: space-between;
+    // border: 1px solid black;
+    overflow: scroll;
+        &::-webkit-scrollbar
+            {
+                width: 6px;
+                height: 0px;
+                background-color: #E0FCDE;
+            } 
+        &::-webkit-scrollbar-thumb
+            {
+                background-color: #134818;
+            }
 
+    @media (max-width: 414px) {
+        flex-direction: column;
+        height: 85%;
+    }
 `

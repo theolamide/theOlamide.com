@@ -2,7 +2,7 @@ import React from 'react';
 import LogoandHam from './LogoAndHam';
 import styled from 'styled-components';
 
-import { PortfolioData } from './PortfolioData'
+import { PortfolioData } from './PortfolioData.js'
 
 const DevPortfolio = (props) => {
 
