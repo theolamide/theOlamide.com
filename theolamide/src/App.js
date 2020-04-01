@@ -5,7 +5,8 @@ import { Route, Switch, BrowserRouter } from "react-router-dom";
 import NavBar from './Components/NavBar';
 import Home from './Components/Home';
 import About from './Components/About';
-import Portfolio from './Components/Portfolio';
+import DevPortfolio from './Components/DevPortfolio';
+import PhotoPortfolio from './Components/PhotoPortfolio';
 
 import ParticlesJS from "./Components/ParticlesJS";
 
@@ -36,12 +37,14 @@ function App() {
           <NavBar NavAppear={NavAppear} closeBackDropClickHandler={closeBackDropClickHandler} />
           <Switch>
             <Route path='/about' render={(props) => <About drawerToggleClickHandler={drawerToggleClickHandler} />} />
-            <Route path='/portfolio' render={(props) => <Portfolio drawerToggleClickHandler={drawerToggleClickHandler} />} />
+            <Route path='/devportfolio' render={(props) => <DevPortfolio drawerToggleClickHandler={drawerToggleClickHandler} />} />
+            <Route path='/photoportfolio' render={(props) => <PhotoPortfolio drawerToggleClickHandler={drawerToggleClickHandler} />} />
             <Route path='/' render={(props) => <Home drawerToggleClickHandler={drawerToggleClickHandler} />} />
           </Switch>
 
         </SubWrapper>
       </SiteWrapper>
+
     </BrowserRouter>
 
   );

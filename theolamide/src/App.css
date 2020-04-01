@@ -40,6 +40,10 @@ h2{
   font-family: 'Gruppo', cursive;
 }
 
+h3, h4, h5, h6 {
+  font-family: 'Gruppo', cursive;
+}
+
 p{
   font-family: 'Baloo 2', cursive;
 }
@@ -55,8 +59,3 @@ button{
   background-color: #BCE5B9;
 }
 
-.visit{
-  width: 10rem;
-  height: 3rem;
-  border-radius: 0.25rem;
-}

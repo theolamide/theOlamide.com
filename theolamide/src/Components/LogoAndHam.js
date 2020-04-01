@@ -23,10 +23,21 @@ const LogoandHam = (props) => {
 export default LogoandHam;
 
 const TopContainer = styled.div`
-    width: 95%;
+    width: 96%;
     display: flex;
     justify-content: space-between;
-    margin: 1rem auto;
+    // border: 1px solid black;
+    margin: 0 auto;
+    padding: 0 2rem;
+    padding-top: 1rem;
+    -webkit-box-shadow: 0px 2px 15px 0px rgba(19,72,24,0.42);
+    -moz-box-shadow: 0px 2px 15px 0px rgba(19,72,24,0.42);
+    box-shadow: 0px 2px 15px 0px rgba(19,72,24,0.42);
+            @media (max-width: 414px) {
+                            width: 95%;
+                            padding: 0 0.6rem;
+                            padding-top: 1rem;
+                        }
 `
 const LogoWrapper = styled.img`
     width: 2rem;

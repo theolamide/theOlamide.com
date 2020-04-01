@@ -16,15 +16,19 @@ const TopDrawer = ({ closeDrawer }) => {
 
                 <LinkAndHamWrapper>
                     <LinkWrapper>
+
                         <StyledLink to="/about" onClick={closeDrawer}>aboutMe</StyledLink>
 
-                        <StyledLink to="/skillset" onClick={closeDrawer}>mySkillset</StyledLink>
+                        <StyledLink to="/devportfolio" onClick={closeDrawer}>myDevWork</StyledLink>
 
-                        <StyledLink to="/portfolio" onClick={closeDrawer}>myPortfolio</StyledLink>
+                        <StyledLink to="/photoportfolio" onClick={closeDrawer}>myPhotoWork</StyledLink>
+
+                        {/* <StyledLink to="/skillset" onClick={closeDrawer}>mySkillset</StyledLink>
+
 
                         <StyledLink to="/contact" onClick={closeDrawer}>contactMe</StyledLink>
 
-                        <StyledLink to="/store" onClick={closeDrawer}>buyMyArt</StyledLink>
+                        <StyledLink to="/store" onClick={closeDrawer}>buyMyArt</StyledLink> */}
                     </LinkWrapper>
 
                     <HamWrapper onClick={closeDrawer}>
@@ -94,6 +98,13 @@ const StyledLink = styled(Link)`
     text-decoration: none;
     color: #0E4416;
     // border: 1px solid black;
+
+    &:hover{
+                transform: scale(1.15);
+                // transition: .2s transform ease-out;
+                transition: .2s transform ease-in;
+            }
+
     @media (max-width: 414px) {
         border-right: 2px solid #67973E;
         padding-right: 0.5rem;
