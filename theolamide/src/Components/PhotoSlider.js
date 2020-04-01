@@ -14,7 +14,7 @@ const PhotoSlider = () => {
                 {PhotoRoll.map(photos => (
                     <div>
                         <img src={photos.src} />
-                        <p className="legend">Legend 1</p>
+                        <p className="legend">{photos.caption}</p>
                     </div>
                 ))}
             </Car>

@@ -16,7 +16,7 @@ const About = (props) => {
                 <AboutWrapper>
                     <AboutHeader>aboutMe</AboutHeader>
                     <AboutParagraph>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        I spend most of my days writing Javascript in the form of ReactJS and NodeJs, but lately I've been writing more Python. In my spare time I like to travel and photograpgh breathtaking landscapes. In my former life (read a year ago) I was a Mechanical Engineer designing and servicing fuel trains for for industrial heating systems. In June 2019, I decided to switch career paths to the Software side of things as I have always been fascinated by Tech and the impact of it. I made the final decision on an 18 day cross country trip that was eye opening and exhilirating at the same time. The reasoning was that life is too short to not go after something I'm really passionate about becasue I feel it's too late. Since making the decision I've literally lived, breathe, slept and eaten code since then trying to get my skills up to employability. I am at a place now where I have learnt enough to know I bring a lot to the table for any employer.
                     </AboutParagraph>
                 </AboutWrapper>
                 <ProfileImage src={Profile} alt="profile image" />
@@ -49,10 +49,9 @@ const AboutWrapper = styled.div`
     background: #BCE5B9;
     border-radius: 0.5rem;
     padding: 0 0.5rem;
-    
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     // border: 1px solid red;
     @media (max-width: 414px) {
         width: 95%;
@@ -68,9 +67,8 @@ const AboutHeader = styled.h2`
     }
 `
 const AboutParagraph = styled.p`
-    height: 80%;
     margin: 0 auto;
-    //border: 1px solid orange;
+    // border: 1px solid orange;
     color: #0E4416;
 
 `
@@ -81,11 +79,11 @@ const MainContent = styled.div`
     height: 80%;
     display: flex;
     justify-content: space-between;
-    // border: 1px solid black;
+    //border: 1px solid black;
     overflow: scroll;
         &::-webkit-scrollbar
             {
-                width: 6px;
+                width: 0.25px;
                 height: 0px;
                 background-color: #E0FCDE;
             } 

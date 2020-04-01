@@ -35,7 +35,7 @@ export const PortfolioData = [
         title: "Merch Dropper",
         cover: `${MerchDropperCover}`,
         description: "It's the fastest way to set up a hassle free merch shop. Platform to upload designs and create products that plug into scalablepress.com to create a drop-shipping online shop.",
-        technologies: ["ReactJS", "NodeJS", "Express", "Redux", "knex", "PostgressSQL", "Jest"],
+        technologies: ["ReactJS", "NodeJS", "Express", "Redux", "axios", "knex", "PostgressSQL", "Jest"],
         link: "https://www.merch-dropper.com/"
     },
     {
@@ -51,78 +51,103 @@ export const PortfolioData = [
 
 export const PhotoRoll = [
     {
-        src: `${Akolade1}`
+        src: `${Akolade1}`,
+        caption: "Fresh Prince"
     },
     {
-        src: `${Bri1}`
+        src: `${Bri1}`,
+        caption: "Colored Beauty"
     },
     {
-        src: `${Bri2}`
+        src: `${Bri2}`,
+        caption: "Reach"
     },
     {
-        src: `${Bri3}`
+        src: `${Bri3}`,
+        caption: "Angels Among Us"
     },
     {
-        src: `${DIC1}`
+        src: `${DIC1}`,
+        caption: "Pink, a product shoot for DIC Beauty"
     },
     {
-        src: `${Eli1}`
+        src: `${Eli1}`,
+        caption: "Thinking Man"
     },
     {
-        src: `${Eli2}`
+        src: `${Eli2}`,
+        caption: "Melanin King 1"
     },
     {
-        src: `${Eli3}`
+        src: `${Eli3}`,
+        caption: "Melanin King 2"
     },
     {
-        src: `${Elizabeth1}`
+        src: `${Elizabeth1}`,
+        caption: "Among Planets"
     },
     {
-        src: `${Fire1}`
+        src: `${Fire1}`,
+        caption: "Red"
     },
     {
-        src: `${GP3}`
+        src: `${GP3}`,
+        caption: "Pre-Wedding: Pelumi and Gabe"
     },
     {
-        src: `${Ice1}`
+        src: `${Ice1}`,
+        caption: "Ice Princess"
     },
     {
-        src: `${Som1}`
+        src: `${Som1}`,
+        caption: "CWRU 2019 Grad"
     },
     {
-        src: `${Van1}`
+        src: `${Van1}`,
+        caption: "CWRU 2019 Grad"
     },
     {
-        src: `${Viva1}`
+        src: `${Viva1}`,
+        caption: "Product Shoot: VIVA African"
     },
     {
-        src: `${Viva2}`
+        src: `${Viva2}`,
+        caption: "Product Shoot: VIVA African"
     },
     {
-        src: `${Viva3}`
+        src: `${Viva3}`,
+        caption: "Product Shoot: VIVA African"
     },
     {
-        src: `${IBK1}`
+        src: `${IBK1}`,
+        caption: "Melanin and Pastel: A match made in Heaven"
     },
     {
-        src: `${Nacari1}`
+        src: `${Nacari1}`,
+        caption: "Peachy"
     },
     {
-        src: `${Eze1}`
+        src: `${Eze1}`,
+        caption: "Thou shall not be crusty on LinkedIn"
     },
     {
-        src: `${GP2}`
+        src: `${GP2}`,
+        caption: "Pre-Wedding: Pelumi and Gabe"
     },
     {
-        src: `${Avatar1}`
+        src: `${Avatar1}`,
+        caption: "Avatar"
     },
     {
-        src: `${Billy1}`
+        src: `${Billy1}`,
+        caption: "Melanin Overload"
     },
     {
-        src: `${GP1}`
+        src: `${GP1}`,
+        caption: "Pre-Wedding: Pelumi and Gabe"
     },
     {
-        src: `${DIC2}`
+        src: `${DIC2}`,
+        caption: "Hair Sisters"
     }
 ]

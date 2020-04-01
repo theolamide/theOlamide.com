@@ -34,6 +34,10 @@ export default Home;
 const RootWrapper = styled.div`
     width: 100%;
     //height: 100%;
+    // border: 1px solid red;
+    @media (max-width: 414px) {
+            height: 100%;
+        }
     
 `
 const MainContent = styled.div`
@@ -43,13 +47,16 @@ const MainContent = styled.div`
     height: 70vh;
     display: flex;
     justify-content: space-around;
-    // border: 1px solid black;
+    // border: 1px solid blue;
     @media (max-width: 768px) {
             flex-direction: column-reverse;
             height: 100%;
         }
         @media (max-width: 414px) {
             margin-top: 1rem;
+            justify-content: center;
+            height: 89vh;
+            flex-direction: column-reverse;
         }
 `
 const TitlesWrapper = styled.div`
@@ -57,6 +64,7 @@ const TitlesWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    // border: 1px solid black;
     //border-radius: 0.75rem;
     //border-right: 0.25rem solid #67973E;
     @media (max-width: 768px) {
@@ -65,14 +73,18 @@ const TitlesWrapper = styled.div`
         }
         @media (max-width: 414px) {
             margin: 3rem auto;
+            margin-bottom: 0;
             border: none;
             // border: 1px solid black;
         }
 `
 const NameTitle = styled.h1`
     font-size: 9rem;
-    color: #67973E;    
+    color: #67973E;
+    //background: #E0FCDE;
     // border: 1px solid black;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
     
     @media (max-width: 768px) {
             font-size: 5rem;
@@ -85,8 +97,10 @@ const NameTitle = styled.h1`
 `
 const Titles = styled.h2`
     margin: 0 auto;
+    margin-bottom: 6rem;
     color: #0E4416;
     text-align: center;
+    background: #E0FCDE;
     // border: 1px solid black;
 
     @media (max-width: 414px) {

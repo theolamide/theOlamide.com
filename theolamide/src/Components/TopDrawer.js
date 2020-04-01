@@ -16,7 +16,6 @@ const TopDrawer = ({ closeDrawer }) => {
 
                 <LinkAndHamWrapper>
                     <LinkWrapper>
-                        <StyledLink to="/" onClick={closeDrawer}>goHome</StyledLink>
 
                         <StyledLink to="/about" onClick={closeDrawer}>aboutMe</StyledLink>
 
@@ -99,6 +98,13 @@ const StyledLink = styled(Link)`
     text-decoration: none;
     color: #0E4416;
     // border: 1px solid black;
+
+    &:hover{
+                transform: scale(1.15);
+                // transition: .2s transform ease-out;
+                transition: .2s transform ease-in;
+            }
+
     @media (max-width: 414px) {
         border-right: 2px solid #67973E;
         padding-right: 0.5rem;
