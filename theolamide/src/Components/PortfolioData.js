@@ -36,7 +36,7 @@ export const PortfolioData = [
         cover: `${MerchDropperCover}`,
         description: "It's the fastest way to set up a hassle free merch shop. Platform to upload designs and create products that plug into scalablepress.com to create a drop-shipping online shop.",
         technologies: ["ReactJS", "NodeJS", "Express", "Redux", "axios", "knex", "PostgressSQL", "Jest"],
-        link: "https://www.merch-dropper.com/"
+        link: "https://www.merchdropper.store/"
     },
     {
         index: 2,    //These should be incremental from the last interger

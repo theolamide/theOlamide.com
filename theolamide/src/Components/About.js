@@ -30,6 +30,7 @@ export default About;
 
 const RootWrapper = styled.div`
     height: 96%;
+    // border: 1px solid blue;
 `
 
 const ProfileImage = styled.img`
@@ -70,16 +71,26 @@ const AboutParagraph = styled.p`
     margin: 0 auto;
     // border: 1px solid orange;
     color: #0E4416;
-
+        overflow: scroll;
+        &::-webkit-scrollbar
+            {
+                width: 0px;
+                height: 0px;
+                background-color: #E0FCDE;
+            } 
+        &::-webkit-scrollbar-thumb
+            {
+                background-color: #134818;
+            }
 `
 const MainContent = styled.div`
     margin: auto;
-    margin-top: 1rem;
+    margin-top: 2rem;
     width: 95%;
     height: 80%;
     display: flex;
     justify-content: space-between;
-    //border: 1px solid black;
+    // border: 1px solid black;
     overflow: scroll;
         &::-webkit-scrollbar
             {
@@ -93,6 +104,7 @@ const MainContent = styled.div`
             }
 
     @media (max-width: 414px) {
+        margin-top: 1rem;
         flex-direction: column;
         height: 85%;
     }

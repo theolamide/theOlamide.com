@@ -129,6 +129,7 @@ const ButtonsWrapper = styled.div`
     transition: .2s transform ease-in-out;
     will-change: transform;
     z-index: 0;
+    outline:none;
         
             &::after{
                 background-color: #134818;
@@ -175,6 +176,7 @@ const TagButtonDiv = styled.div`
     //border: 1px solid black;
         
     .tags{
+            outline:none;
             &:hover{
                 transform: scale(1.05);
             }
