@@ -55,7 +55,7 @@ const MainContent = styled.div`
         @media (max-width: 414px) {
             margin-top: 1rem;
             justify-content: center;
-            height: 89vh;
+            height: 80vh;
             flex-direction: column-reverse;
         }
 `

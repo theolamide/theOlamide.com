@@ -41,4 +41,8 @@ const Car = styled(Carousel)`
     background: white;
     // border: 2px solid blue;
 
+        div{
+            margin: auto;
+        }
+
 `
